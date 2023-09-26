@@ -32,11 +32,12 @@
             <a class="navigation-link" href="#">
               <img src="#" alt="Избранное">
               <span class="visually-hidden">Избранное</span>
+              <span>12</span>
             </a>
           </li>
         </ul>
       </nav>
-      <a class="button">Хочу сюда</a>
+      <a href="catalog.html" class="button">Хочу сюда!</a>
     </header>
     <main class="page-main" data-test="main" >
         <section class="catalog-hero" data-test="filter">
@@ -101,9 +102,11 @@
                   <fieldset class="price">
                     <legend>Стоимость, ₽:</legend>
                       <div class="input input-min-price">
+                        <label>От</label>
                         <input type="text" class="min-price" placeholder="0">
                       </div>
                       <div class="input input-max-price">
+                        <label>До</label>
                         <input type="text" class="max-price" placeholder="9000">
                       </div>
                   </fieldset>
@@ -119,17 +122,23 @@
             <option value="Сначала дешевые">Сначала дешевые</option>
           </select>
         </section>
-        <div class="type-list-card">
-          <button>
-            <img src="#" alt="Мелкая сетка">
-          </button>
-          <button>
-            <img src="#" alt="Крупная сетка">
-          </button>
-          <button>
-            <img src="#" alt="Список">
-          </button>
-        </div>
+        <ul class="type-card-list">
+          <li class="type-card-item">
+            <button>
+              <img src="#" alt="Мелкая сетка">
+            </button>
+          </li>
+          <li class="type-card-item">
+            <button>
+              <img src="#" alt="Крупная сетка">
+            </button>
+          </li>
+          <li class="type-card-item">
+            <button>
+              <img src="#" alt="Список">
+            </button>
+          </li>
+        </ul>
         <section class="catalog-hotels">
           <ul class="catalog-list">
             <li class="catalog-item">
