@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-heder">
+    <header class="page-heder" data-test="header">
       <a class="logo-sedona" href="index.html">
         <img src="#" alt="Логотип Седона">
       </a>
@@ -36,10 +36,10 @@
           </li>
         </ul>
       </nav>
-      <button class="button">Хочу сюда</button>
+      <a class="button">Хочу сюда</a>
     </header>
-    <main class="page-main">
-        <section class="catalog-hero">
+    <main class="page-main" data-test="main" >
+        <section class="catalog-hero" data-test="filter">
             <h1>Гостиницы Седоны</h1>
             <ol class="breadcrumb-list">
                 <li class="breadcrumb-item">
@@ -113,7 +113,7 @@
                   </div>
               </form>
         </section>
-        <section class="sort">
+        <section class="sort" data-test="catalog">
           <h2>Найдено гостиниц: 38</h2>
           <select name="sorting">
             <option value="Сначала дешевые">Сначала дешевые</option>
@@ -216,7 +216,7 @@
             </li>
           </ol>
         </nav>
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
@@ -225,7 +225,7 @@
             </form>
         </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <div class="contacts">
         <ul class="contacts-list">
           <li class="contacts-item">
