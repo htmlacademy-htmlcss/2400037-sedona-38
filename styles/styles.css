@@ -1,0 +1,94 @@
+@font-face{
+    font-family:  "PT Sans";
+    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face{
+    font-family:  "PT Sans";
+    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+body{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    color:#333333;
+    background-color:#F2F2F2;
+}
+/* потом убрать*/
+.visually-hidden{
+    display: none;
+}
+.page-heder{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 24px;
+   color:#000000;
+   background-color:#FFFFFF;
+}
+.navigation-link{
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+.button-modal{
+   font-size: 20px;
+   line-height: 20px;
+   text-align: center;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   background-color: #756157;
+   text-decoration: none;
+}
+
+.page-main{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.page-main-hero{
+    background-image: url(../images/bg-img/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.reasons h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reasons p{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+.reasons-item h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+.reasons-item-image{
+    display: block;
+}
+.reasons-item{
+    background-color:#83B3D333;
+    color: #333333;
+}
+.reasons-item:first-child{
+    color: #FFFFFF;
+    background-color:#82B3D3;
+}
+.reasons-item:last-child{
+    color: #FFFFFF;
+    background-color:#82B3D3;
+}
+.reasons-item:nth-child(2n){
+    background-color:#83B3D31F;
+}
