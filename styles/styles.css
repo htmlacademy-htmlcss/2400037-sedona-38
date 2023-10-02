@@ -1,13 +1,13 @@
 @font-face{
     font-family:  "PT Sans";
-    src: url(../fonts/ptsans-400.woff2) format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
 @font-face{
     font-family:  "PT Sans";
-    src: url(../fonts/ptsans-700.woff2) format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -20,10 +20,7 @@ body{
     color:#333333;
     background-color:#F2F2F2;
 }
-/* потом убрать*/
-.visually-hidden{
-    display: none;
-}
+
 .page-heder{
    font-size: 20px;
    font-weight: 700;
@@ -45,6 +42,17 @@ body{
    background-color: #756157;
    text-decoration: none;
 }
+.favorites-check{
+    background-color:#7DB54F;
+    background-size: 20px 20px;
+    border:solid #7DB54F;
+    border-radius: 50% ;
+    color:#FFFFFF;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 400;
+}
 
 .page-main{
     background-color: #FFFFFF;
@@ -52,43 +60,126 @@ body{
 }
 
 .page-main-hero{
-    background-image: url(../images/bg-img/index-background.jpg);
+    background-image: url("../images/bg-img/flag.png"), url("../images/bg-img/index-background.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: contain, cover;
+    background-color: #000000;
+    background-position: center bottom;
 }
+
 .reasons h2{
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
+    color: #000000;
 }
 .reasons p{
     font-size: 22px;
     line-height: 26px;
+    font-weight: 400;
     text-align: center;
+    color:#333333;
 }
 .reasons-item h3{
     font-size: 24px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 28px;
     text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.reasons-item p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-line: 2px;
+    text-decoration-color: #000000;
 }
 .reasons-item-image{
     display: block;
 }
-.reasons-item{
-    background-color:#83B3D333;
-    color: #333333;
-}
-.reasons-item:first-child{
-    color: #FFFFFF;
+
+.reasons-item-city{
     background-color:#82B3D3;
 }
-.reasons-item:last-child{
-    color: #FFFFFF;
-    background-color:#82B3D3;
+.reasons-item-city h3{
+    color:#FFFFFF;
 }
-.reasons-item:nth-child(2n){
+.reasons-item-city p{
+    color: #FFFFFF;
+    text-decoration-line: 2px;
+    text-decoration-color:#FFFFFF4D;
+}
+
+.reasons-item-square{
     background-color:#83B3D31F;
+}
+.reasons-item-road{
+    background-color:#83B3D333;
+}
+.reasons-item-tourist{
+    background-color:#83B3D31F;
+}
+.reasons-item-bridge{
+    background-color:#82B3D3;
+}
+.reasons-item-bridge h3{
+    color:#FFFFFF;
+}
+.reasons-item-bridge p{
+    color: #FFFFFF;
+    text-decoration-line: 2px;
+    text-decoration-color:#FFFFFF4D;
+}
+
+
+
+
+
+
+
+.service h2{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+.service p{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color:#333333;
+}
+.service-item h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+.service-item p{
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color:#333333;
+}
+.service-item-home{
+    background-image: url("../images/service/service-home.svg");
+    background-color: #83B3D31F;
+    background-repeat: no-repeat;
+}
+.service-item-food{
+    background-image: url("../images/service/service-food.svg");
+    background-repeat: no-repeat;
+}
+.service-item-souvenir{
+    background-image: url("../images/service/service-souvenir.svg");
+    background-color: #83B3D31F;
+    background-repeat: no-repeat;
 }
