@@ -37,6 +37,7 @@ body{
    font-size: 20px;
    line-height: 20px;
    text-align: center;
+   font-weight: 700;
    text-transform: uppercase;
    color: #FFFFFF;
    background-color: #756157;
@@ -152,6 +153,7 @@ body{
 }
 .service p{
     font-size: 22px;
+    font-weight: 400;
     line-height: 26px;
     text-align: center;
     color:#333333;
@@ -161,10 +163,12 @@ body{
     font-weight: 700;
     line-height: 28px;
     text-align: center;
+    text-transform: uppercase;
     color: #000000;
 }
 .service-item p{
     font-size: 18px;
+    font-weight: 400;
     line-height: 21px;
     text-align: center;
     color:#333333;
@@ -182,4 +186,28 @@ body{
     background-image: url("../images/service/service-souvenir.svg");
     background-color: #83B3D31F;
     background-repeat: no-repeat;
+}
+
+.search h2{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.search p{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+}
+.search-link{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
