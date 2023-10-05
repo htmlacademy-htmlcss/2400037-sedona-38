@@ -41,7 +41,7 @@
       </nav>
       <a href="catalog.html" class="button button-modal">Хочу сюда!</a>
     </header>
-    <main class="page-main" data-test="main" >
+    <main class="page-main-catalog" data-test="main" >
         <section class="catalog-hero" data-test="filter">
             <h1>Гостиницы Седоны</h1>
             <ol class="breadcrumb-list">
@@ -56,53 +56,53 @@
             </ol>
             <form action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="infrastructure">
-                  <legend>Инфраструктура</legend>
+                  <legend class="form-legend">Инфраструктура</legend>
                     <ul class="infrastructure-list">
                         <li class="infrastructure-item">
                           <div class="checkbox checkbox-pool">
                             <input type="checkbox" id="pool">
-                            <label for="pool">Бассейн</label>
+                            <label class="form-label" for="pool">Бассейн</label>
                           </div>
                         </li>
                         <li class="infrastructure-item">
                           <div class="checkbox checkbox-parking">
                             <input type="checkbox" id="parking">
-                            <label for="parking" >Парковка</label>
+                            <label class="form-label" for="parking" >Парковка</label>
                           </div>
                         </li>
                         <li class="infrastructure-item">
                           <div class="checkbox checkbox-wifi">
                             <input type="checkbox" id="wifi">
-                            <label for="wifi">Wi-Fi</label>
+                            <label class="form-label" for="wifi">Wi-Fi</label>
                           </div>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset class="houses">
-                    <legend>Тип жилья</legend>
+                    <legend class="form-legend">Тип жилья</legend>
                       <ul class="houses-list">
                           <li class="houses-item">
                             <div class="radio radio-hotel">
                               <input type="radio" id="hotel">
-                              <label for="hotel">Гостиница</label>
+                              <label class="form-label" for="hotel">Гостиница</label>
                             </div>
                           </li>
                           <li class="houses-item">
                             <div class="radio radio-motel">
                               <input type="radio" id="motel">
-                              <label for="motel">Мотель</label>
+                              <label class="form-label" for="motel">Мотель</label>
                             </div>
                           </li>
                           <li class="houses-item">
                             <div class="radio radio-apartaments">
                               <input type="radio" id="apartments">
-                              <label for="apartments">Аппартаменты</label>
+                              <label class="form-label" for="apartments">Аппартаменты</label>
                             </div>
                           </li>
                       </ul>
                   </fieldset>
                   <fieldset class="price">
-                    <legend>Стоимость, ₽:</legend>
+                    <legend class="form-legend">Стоимость, ₽:</legend>
                       <div class="input input-min-price">
                         <label>От</label>
                         <input type="text" class="min-price" placeholder="0">
@@ -113,15 +113,15 @@
                       </div>
                   </fieldset>
                   <div class="select">
-                    <button class="submit" type="submit">Применить</button>
-                    <button class="reset" type="reset">Сбросить</button>
+                    <button class="button button-link" type="submit">Применить</button>
+                    <button class="button button-reset" type="reset">Сбросить</button>
                   </div>
               </form>
         </section>
-        <section class="sort" data-test="catalog">
-          <h2>Найдено гостиниц: 38</h2>
+        <section class="catalog" data-test="catalog">
+          <h2 class="index-title">Найдено гостиниц: 38</h2>
           <select name="sorting">
-            <option value="Сначала дешевые">Сначала дешевые</option>
+            <option class="sorting-description" value="Сначала дешевые">Сначала дешевые</option>
           </select>
         </section>
         <div class="type-card-buttons">
@@ -143,6 +143,7 @@
             </li>
           </ul>
         </div>
+        <!--Доделать звезды-->
         <section class="catalog-hotels">
           <ul class="catalog-list">
             <li class="catalog-item">
@@ -150,14 +151,16 @@
                 <a href="#">
                   <img src="images/hotels/hotel-amara.jpg" width="300" height="212" alt="Вид из пещеры на звездное небо">
                 </a>
-                <h3><a href="#">Amara Resort & Spa</a></h3>
-                <p>Гостиница <span>От 4000 ₽</span></p>
+                <h3 class="index-subtitle subtitle-card"><a class="catalog-link" href="#">Amara Resort & Spa</a></h3>
+                <p class="index-subdescription sabdescription-catalog">Гостиница От 4000 ₽</p>
                 <div class="interaction">
-                  <a href="#" class="button button-link">Подробнее</a>
+                  <a href="#" class="button button-modal">Подробнее</a>
                   <a href="#" class="button button-link">В Избранное</a>
                 </div>
-                <div class="reviews">
-                  <p class="visually-hidden stars">4 звезды</p>
+                <div class="stars stars-4">
+                  <span class="visually-hidden">4 звезды</span>
+                </div>
+                <div>
                   <p>Рейтинг: 8.5</p>
                 </div>
               </article>
@@ -167,16 +170,16 @@
                 <a href="#">
                   <img src="images/hotels/hotel-villas.jpg" width="300" height="212" alt="Горы и радуга">
                 </a>
-                <h3><a href="#">Villas at Poco Diablo</a></h3>
-                <p>Гостиница <span>От 5000 ₽</span></p>
+                <h3 class="index-subtitle subtitle-card"><a class="catalog-link" href="#">Villas at Poco Diablo</a></h3>
+                <p class="index-subdescription sabdescription-catalog">Гостиница От 5000 ₽</p>
                 <div class="interaction">
-                  <a href="#" class="button button-link">Подробнее</a>
-                  <a href="#" class="button button-link">В Избранное</a>
+                  <a href="#" class="button button-modal">Подробнее</a>
+                  <a href="#" class="button button-link  button-favorites">В Избранном</a>
                 </div>
-                <div class="reviews">
-                  <p class="visually-hidden stars">4 звезды</p>
-                  <p>Рейтинг: 9.2</p>
+                <div class="stars stars-4">
+                  <p class="visually-hidden">4 звезды</p>
                 </div>
+                <p>Рейтинг: 9.2</p>
               </article>
             </li>
             <li class="catalog-item">
@@ -184,16 +187,16 @@
                 <a href="#">
                   <img src="images/hotels/hotel-desert.jpg" width="300" height="212" alt="Горы на рассвете">
                 </a>
-                <h3><a href="#">Desert Quail Inn</a></h3>
-                <p>Гостиница <span>От 2500 ₽</span></p>
+                <h3 class="index-subtitle subtitle-card"><a class="catalog-link" href="#">Desert Quail Inn</a></h3>
+                <p class="index-subdescription sabdescription-catalog">Гостиница От 2500 ₽</p>
                 <div class="interaction">
-                  <a href="#" class="button button-link">Подробнее</a>
+                  <a href="#" class="button button-modal">Подробнее</a>
                   <a href="#" class="button button-link">В Избранное</a>
                 </div>
-                <div class="reviews">
-                  <p class="visually-hidden stars">3 звезды</p>
-                  <p>Рейтинг: 6.9</p>
+                <div class="stars stars-3">
+                  <p class="visually-hidden">3 звезды</p>
                 </div>
+                <p>Рейтинг: 6.9</p>
               </article>
             </li>
             <li class="catalog-item">
@@ -201,17 +204,17 @@
                 <a href="#">
                   <img src="images/hotels/hotel-greentree.jpg" width="300" height="212" alt="Горы на закате и звездное небо">
                 </a>
-                <h3><a href="#">GreenTree Inn</a></h3>
-                <p>Гостиница <span>От 1500 ₽</span></p>
+                <h3 class="index-subtitle subtitle-card"><a class="catalog-link" href="#">GreenTree Inn</a></h3>
+                <p class="index-subdescription sabdescription-catalog">Гостиница От 1500 ₽</p>
                 <div class="interaction">
-                  <a href="#" class="button button-link">Подробнее</a>
+                  <a href="#" class="button button-modal">Подробнее</a>
                   <a href="#" class="button button-link">В Избранное</a>
                 </div>
-                <div class="reviews">
-                  <p class="visually-hidden stars">2 звезды</p>
-                  <p>Рейтинг: 5.0</p>
+                <div class="stars stars-2">
+                  <p class="visually-hidden">2 звезды</p>
                 </div>
-            </article>
+                <p>Рейтинг: 5.0</p>
+              </article>
             </li>
           </ul>
         </section>
@@ -237,12 +240,12 @@
             </li>
           </ol>
         </nav>
-        <section class="subscribe" data-test="subscribe">
+        <section class="subscribe subscribe-catalog" data-test="subscribe">
             <h2>Подпишитесь на рассылку</h2>
             <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" method="post">
                 <input type="email" name="email" placeholder="Ваш e-mail">
-                <button type="submit" class="button button-link">Подписаться</button>
+                <button type="submit" class="button button-link button-subscribe">Подписаться</button>
             </form>
         </section>
     </main>
@@ -267,7 +270,7 @@
         </ul>
       </div>
       <div class="contacts-tel">
-        <a href="tel:78128121212">+7 (812) 812-12-12</a>
+        <a class="contacts-tel-link" href="tel:78128121212">+7 (812) 812-12-12</a>
       </div>
       <div class="contacts-logo"></div>
         <a href="https://htmlacademy.ru/">

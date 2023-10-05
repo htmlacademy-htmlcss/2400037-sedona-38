@@ -19,12 +19,14 @@ body{
     font-weight: 400;
     color:#333333;
     background-color:#F2F2F2;
+    font-style: normal;
+    text-align: center;
 }
-
 .page-heder{
    font-size: 20px;
    font-weight: 700;
    line-height: 24px;
+   text-align: left;
    color:#000000;
    background-color:#FFFFFF;
 }
@@ -32,16 +34,6 @@ body{
     text-decoration: none;
     text-align: center;
     color: #000000;
-}
-.button-modal{
-   font-size: 20px;
-   line-height: 20px;
-   text-align: center;
-   font-weight: 700;
-   text-transform: uppercase;
-   color: #FFFFFF;
-   background-color: #756157;
-   text-decoration: none;
 }
 .favorites-check{
     background-color:#7DB54F;
@@ -54,56 +46,59 @@ body{
     text-align: center;
     font-weight: 400;
 }
-
 .page-main{
     background-color: #FFFFFF;
-    color: #000000;
 }
-
 .page-main-hero{
     background-image: url("../images/bg-img/flag.png"), url("../images/bg-img/index-background.jpg");
     background-repeat: no-repeat;
     background-size: contain, cover;
-    background-color: #000000;
+    background-color: #615b5b;;
     background-position: center bottom;
 }
-
-.reasons h2{
+.index-title{
     font-size: 30px;
+    font-style: normal;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
     text-align: center;
     color: #000000;
 }
-.reasons p{
+.index-description{
     font-size: 22px;
+    font-style: normal;
     line-height: 26px;
     font-weight: 400;
     text-align: center;
     color:#333333;
 }
-.reasons-item h3{
+.index-subtitle{
     font-size: 24px;
+    font-style: normal;
     font-weight: 700;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
-.reasons-item p{
+.index-subdescription{
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
     text-decoration: overline;
     text-decoration-line: 2px;
-    text-decoration-color: #000000;
+    text-decoration-color: #333333;
+}
+.service-subdescription{
+    text-decoration: none;
 }
 .reasons-item-image{
-    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
-
 .reasons-item-city{
     background-color:#82B3D3;
 }
@@ -115,7 +110,6 @@ body{
     text-decoration-line: 2px;
     text-decoration-color:#FFFFFF4D;
 }
-
 .reasons-item-square{
     background-color:#83B3D31F;
 }
@@ -136,43 +130,6 @@ body{
     text-decoration-line: 2px;
     text-decoration-color:#FFFFFF4D;
 }
-
-
-
-
-
-
-
-.service h2{
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 36px;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000000;
-}
-.service p{
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: center;
-    color:#333333;
-}
-.service-item h3{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-.service-item p{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-    color:#333333;
-}
 .service-item-home{
     background-image: url("../images/service/service-home.svg");
     background-color: #83B3D31F;
@@ -187,27 +144,132 @@ body{
     background-color: #83B3D31F;
     background-repeat: no-repeat;
 }
-
-.search h2{
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
+.subscribe{
+    background-image: url("../images/bg-img/subscribe-bg.jpg");
+    background-repeat: no-repeat;
+    background-color: #615b5b;
+    background-position: center bottom;
 }
-.search p{
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: center;
-    color: #333333;
+.subscribe h2{
+    color: #FFFFFF;
 }
-.search-link{
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 36px;
+.subscribe p{
+    color: #FFFFFF;
+}
+.button {
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
+    font-weight: 700;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-decoration: none;
+ }
+ .button-link{
+    background-color: #82B3D3;
+ }
+ .button-modal{
+    background-color: #756157;
+ }
+ .button-subscribe{
+    font-size: 20px;
+    line-height: 36px;
+ }
+ .button-search{
+    font-size: 20px;
+    line-height: 36px;
+ }
+ .button-favorites{
+    background-color: #7DB54F;
+ }
+ .page-footer{
+    text-align: left;
+}
+.contacts-tel-link{
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+.catalog-hero{
+    background-image: url("../images/bg-img/filter.jpg");
+    background-repeat: no-repeat;
+    background-color: #615b5b;
+    background-size:cover;
+    text-align: left;
+    color: #FFFFFF;
+}
+.catalog-hero h1{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 78px;
+}
+.breadcrumb-item{
+    font-size: 16px;
+    line-height: 21px;
+}
+.form-legend{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+}
+.form-label{
+    font-size: 18px;
+    line-height: 23px;
+}
+.page-main-catalog{
+    text-align: left;
+}
+.sorting-description{
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+    color: #333333;
+}
+.subtitle-card{
+    text-transform: none;
+    text-align: left;
+}
+.catalog-link{
+    text-decoration: none;
+    color: #000000;
+}
+.sabdescription-catalog{
+    text-decoration: none;
+    text-align: left;
+    color: #333333;
+}
+.stars-4{
+    background-image: url("../images/hotels/stars-4.png");
+    background-repeat: no-repeat;
+
+}
+.stars-3{
+    background-image: url("../images/hotels/stars-3.png");
+}
+.stars-2{
+    background-image: url("../images/hotels/stars-2.png");
+}
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
