@@ -22,6 +22,19 @@ body{
     font-style: normal;
     text-align: center;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .page-heder{
    font-size: 20px;
    font-weight: 700;
@@ -56,7 +69,7 @@ body{
     background-color: #615b5b;;
     background-position: center bottom;
 }
-.index-title{
+.title{
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -65,7 +78,7 @@ body{
     text-align: center;
     color: #000000;
 }
-.index-description{
+.description{
     font-size: 22px;
     font-style: normal;
     line-height: 26px;
@@ -73,7 +86,7 @@ body{
     text-align: center;
     color:#333333;
 }
-.index-subtitle{
+.subtitle{
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -82,17 +95,16 @@ body{
     text-transform: uppercase;
     color: #000000;
 }
-.index-subdescription{
+.subdescription{
     font-size: 18px;
     font-weight: 400;
     line-height: 21px;
     text-align: center;
+}
+.subdescription-reasons{
     text-decoration: overline;
     text-decoration-line: 2px;
     text-decoration-color: #333333;
-}
-.service-subdescription{
-    text-decoration: none;
 }
 .reasons-item-image{
     max-width: 100%;
@@ -149,6 +161,7 @@ body{
     background-repeat: no-repeat;
     background-color: #615b5b;
     background-position: center bottom;
+    background-size: cover;
 }
 .subscribe h2{
     color: #FFFFFF;
@@ -192,9 +205,6 @@ body{
     color: #000000;
     text-decoration: none;
 }
-
-
-
 .catalog-hero{
     background-image: url("../images/bg-img/filter.jpg");
     background-repeat: no-repeat;
@@ -224,6 +234,7 @@ body{
 }
 .page-main-catalog{
     text-align: left;
+    background-color: #FFFFFF;
 }
 .sorting-description{
     font-size: 18px;
@@ -248,28 +259,44 @@ body{
 .stars-4{
     background-image: url("../images/hotels/stars-4.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
 
 }
 .stars-3{
     background-image: url("../images/hotels/stars-3.png");
+    background-repeat: no-repeat;
 }
 .stars-2{
     background-image: url("../images/hotels/stars-2.png");
+    background-repeat: no-repeat;
 }
-
-
-
-
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.pagination-link{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+}
+.pagination-active{
+    color: #000000;
+    background-color: #F2F2F2;
+}
+.ellipsis{
+    background-color: transparent;
+    color: #000;
+}
+.subscribe-catalog{
+    text-align: center;
+    background-color: #FFFFFF;
+    background-image: none;
+}
+.subscribe-catalog h2{
+    color: #000000;
+}
+.subscribe-catalog p{
+    color: #333333;
 }
