@@ -20,9 +20,14 @@ body{
     color:#333333;
     background-color:#F2F2F2;
     font-style: normal;
-    text-align: center;
+    width: 1200px;
+    padding: 0 40px 0 40px;
+    margin: 0;
 }
-
+.container{
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -39,7 +44,6 @@ body{
    font-size: 20px;
    font-weight: 700;
    line-height: 24px;
-   text-align: left;
    color:#000000;
    background-color:#FFFFFF;
 }
@@ -47,27 +51,43 @@ body{
     text-decoration: none;
     text-align: center;
     color: #000000;
+    text-transform: capitalize;
+}
+.navigation-list{
+    list-style: none;
+}
+.link-favorites{
+    position: relative;
 }
 .favorites-check{
     background-color:#7DB54F;
     background-size: 20px 20px;
     border:solid #7DB54F;
-    border-radius: 50% ;
+    border-radius: 9999px ;
     color:#FFFFFF;
     font-size: 10px;
     line-height: 10px;
     text-align: center;
     font-weight: 400;
-}
-.page-main{
-    background-color: #FFFFFF;
+    min-width: 10px;
+    position: absolute;
+    left: calc(100% - 10px);
+
 }
 .page-main-hero{
     background-image: url("../images/bg-img/flag.png"), url("../images/bg-img/index-background.jpg");
     background-repeat: no-repeat;
     background-size: contain, cover;
-    background-color: #615b5b;;
-    background-position: center bottom;
+    background-color: #615b5b;
+    background-position: center bottom, center;
+    text-align: center;
+    min-height: 485px;
+}
+.page-main-hero-image{
+    display: block;
+    width: 458px;
+    margin: 0 auto;
+    padding-top: 51px;
 }
 .title{
     font-size: 30px;
@@ -96,31 +116,16 @@ body{
     color: #000000;
 }
 .subdescription{
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
     text-align: center;
 }
-.subdescription-reasons{
-    text-decoration: overline;
-    text-decoration-line: 2px;
-    text-decoration-color: #333333;
+.reasons-list{
+    list-style: none;
 }
 .reasons-item-image{
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+    display: block;
 }
 .reasons-item-city{
     background-color:#82B3D3;
-}
-.reasons-item-city h3{
-    color:#FFFFFF;
-}
-.reasons-item-city p{
-    color: #FFFFFF;
-    text-decoration-line: 2px;
-    text-decoration-color:#FFFFFF4D;
 }
 .reasons-item-square{
     background-color:#83B3D31F;
@@ -134,13 +139,14 @@ body{
 .reasons-item-bridge{
     background-color:#82B3D3;
 }
-.reasons-item-bridge h3{
-    color:#FFFFFF;
-}
-.reasons-item-bridge p{
+.title-light,
+.description-light,
+.subtitle-light,
+.sabdescription-light{
     color: #FFFFFF;
-    text-decoration-line: 2px;
-    text-decoration-color:#FFFFFF4D;
+}
+.service-list{
+    list-style: none;
 }
 .service-item-home{
     background-image: url("../images/service/service-home.svg");
@@ -162,12 +168,12 @@ body{
     background-color: #615b5b;
     background-position: center bottom;
     background-size: cover;
+    text-align: center;
 }
-.subscribe h2{
-    color: #FFFFFF;
-}
-.subscribe p{
-    color: #FFFFFF;
+.email-field{
+    background-color: #F2F2F2;
+    font-size: 18px;
+    line-height: 24px;
 }
 .button {
     font-size: 16px;
@@ -177,26 +183,38 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
- }
- .button-link{
+}
+.button-link{
     background-color: #82B3D3;
- }
+}
  .button-modal{
     background-color: #756157;
- }
- .button-subscribe{
+}
+.button-subscribe{
     font-size: 20px;
     line-height: 36px;
- }
- .button-search{
+}
+.button-reset{
+    background-color: transparent;
+}
+.search{
+    text-align: center;
+}
+.button-search{
     font-size: 20px;
     line-height: 36px;
- }
- .button-favorites{
+}
+.button-favorites{
     background-color: #7DB54F;
- }
- .page-footer{
-    text-align: left;
+}
+.type-card-button{
+    background-color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    padding: 14px 12px
+}
+.contacts-list{
+    list-style: none;
 }
 .contacts-tel-link{
     font-size: 40px;
@@ -204,6 +222,27 @@ body{
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
+}
+.vk-icon{
+    display: block;
+    width: 24px;
+    height: 14px;
+    background-image: url("../images/footer/vk.svg");
+    background-repeat: no-repeat;
+}
+.tg-icon{
+    display: block;
+    width: 18px;
+    height: 16px;
+    background-image: url("../images/footer/telegram.svg");
+    background-repeat: no-repeat;
+}
+.yt-icon{
+    display: block;
+    width: 22px;
+    height: 17px;
+    background-image: url("../images/footer/youtube.svg");
+    background-repeat: no-repeat;
 }
 .catalog-hero{
     background-image: url("../images/bg-img/filter.jpg");
@@ -213,7 +252,7 @@ body{
     text-align: left;
     color: #FFFFFF;
 }
-.catalog-hero h1{
+.heading{
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
@@ -232,16 +271,19 @@ body{
     font-size: 18px;
     line-height: 23px;
 }
-.page-main-catalog{
-    text-align: left;
-    background-color: #FFFFFF;
-}
+
 .sorting-description{
     font-size: 18px;
     line-height: 21px;
     font-style: normal;
     font-weight: 400;
     color: #333333;
+}
+.type-card-list{
+    list-style: none;
+}
+.catalog-list{
+    list-style: none;
 }
 .subtitle-card{
     text-transform: none;
@@ -261,15 +303,36 @@ body{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left top;
+    width: 140px;
+    height: 37px;
 
 }
 .stars-3{
     background-image: url("../images/hotels/stars-3.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    width: 140px;
+    height: 37px;
 }
 .stars-2{
     background-image: url("../images/hotels/stars-2.png");
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    width: 140px;
+    height: 37px;
+}
+.rating{
+    background-color: #F2F2F2;
+    width: 140px;
+    height: 37px;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.pagination-list{
+    list-style: none;
 }
 .pagination-link{
     font-size: 20px;
@@ -294,9 +357,9 @@ body{
     background-color: #FFFFFF;
     background-image: none;
 }
-.subscribe-catalog h2{
+.subscribe-catalog .title{
     color: #000000;
 }
-.subscribe-catalog p{
+.subscribe-catalog .description{
     color: #333333;
 }
