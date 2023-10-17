@@ -47,8 +47,8 @@
               <h1 class="heading">Гостиницы Седоны</h1>
               <ol class="breadcrumb-list">
                   <li class="breadcrumb-item">
-                      <a href="index.html">
-                          <img src="images/home.svg" width="13" height="15" alt="На главную">
+                      <a class="breadcrumb-link" href="index.html">
+                        <span class="visually-hidden">На главную</span>
                       </a>
                   </li>
                   <li class="breadcrumb-item">
@@ -57,9 +57,9 @@
               </ol>
             </div>
             <div class="filter" data-test="filter">
-              <form action="https://echo.htmlacademy.ru/" method="post">
+              <form class="filters" action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="infrastructure">
-                  <legend class="form-legend">Инфраструктура</legend>
+                  <legend class="form-legend">Инфраструктура:</legend>
                     <ul class="infrastructure-list">
                         <li class="infrastructure-item">
                           <div class="checkbox checkbox-pool">
@@ -82,7 +82,7 @@
                     </ul>
                 </fieldset>
                 <fieldset class="houses">
-                  <legend class="form-legend">Тип жилья</legend>
+                  <legend class="form-legend">Тип жилья:</legend>
                     <ul class="houses-list">
                         <li class="houses-item">
                           <div class="radio radio-hotel">
@@ -99,13 +99,14 @@
                         <li class="houses-item">
                           <div class="radio radio-apartaments">
                             <input type="radio" id="apartments">
-                            <label class="form-label" for="apartments">Аппартаменты</label>
+                            <label class="form-label" for="apartments">Апартаменты</label>
                           </div>
                         </li>
                     </ul>
                 </fieldset>
                 <fieldset class="price">
                   <legend class="form-legend">Стоимость, ₽:</legend>
+                  <div class="min-max">
                     <div class="input input-min-price">
                       <label>От</label>
                       <input type="text" class="min-price" placeholder="0">
@@ -114,9 +115,10 @@
                       <label>До</label>
                       <input type="text" class="max-price" placeholder="9000">
                     </div>
+                  </div>
                 </fieldset>
                 <div class="select">
-                  <button class="button button-link" type="submit">Применить</button>
+                  <button class="button button-link button-submit" type="submit">Применить</button>
                   <button class="button button-reset" type="reset">Сбросить</button>
                 </div>
               </form>
@@ -262,12 +264,12 @@
             </div>
           </section>
           <section class="subscribe subscribe-catalog" data-test="subscribe">
-              <h2 class="title">Подпишитесь на рассылку</h2>
-              <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-              <form action="https://echo.htmlacademy.ru/" method="post">
-                  <input class="email-field" type="email" name="email" placeholder="Ваш e-mail">
-                  <button type="submit" class="button button-link button-subscribe">Подписаться</button>
-              </form>
+            <h2 class="title title-light subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="description description-light subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <input class="email-field" type="email" name="email" placeholder="Ваш e-mail">
+              <button class="button button-link button-subscribe" type="submit">Подписаться</button>
+            </form>
           </section>
       </main>
       <footer class="page-footer" data-test="footer">

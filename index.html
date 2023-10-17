@@ -9,7 +9,7 @@
     <div class="container">
       <header class="page-heder" data-test="header">
         <a class="logo-sedona">
-          <img src="images/header/logo-sedona.svg" width="138" height="64" alt="Логотип Седона">
+          <img src="images/header/logo-sedona.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -24,15 +24,15 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
-                <img src="images/header/seartch.svg" width="18" height="18" alt="Поиск">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link" href="#">
+                <img class="navigation-image" src="images/header/seartch.svg" width="18" height="18" alt="Поиск">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link link-favorites" href="#">
-                <img src="images/header/favorites.svg" width="18" height="17" alt="Избранное">
+            <li class="navigation-user-item">
+              <a class="navigation-user-link link-favorites" href="#">
+                <img class="navigation-image" src="images/header/favorites.svg" width="18" height="17" alt="Избранное">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorites-check">12</span>
               </a>
@@ -41,21 +41,25 @@
         </nav>
         <a href="catalog.html" class="button button-modal">Хочу сюда!</a>
       </header>
-      <main class="page-main" data-test="main">
+      <main class="page-main main-conteiner" data-test="main">
         <section class="page-main-hero" data-test="hero">
-          <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <img class="page-main-hero-image" src="images/welcome.svg" width="458" height="352" class="welcome-hero" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-        </section>
+            <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+            <img class="page-main-hero-image" src="images/welcome.svg" width="458" height="352" class="welcome-hero" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+          </section>
         <section class="advantages" data-test="advantages">
           <section class="reasons">
-            <h2 class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            <div class="hero-text">
+              <h2 class="title title-resons">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+              <p class="description description-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+            </div>
             <div class="container-reasons">
               <ul class="reasons-list">
                 <li class="reasons-item reasons-item-city">
                   <div class="reasons-text">
-                    <h3 class="subtitle subtitle-light">Настоящий городок</h3>
-                    <p class="subdescription sabdescription-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    <div class="reasons-text-conteiner">
+                      <h3 class="subtitle subtitle-light">Настоящий городок</h3>
+                      <p class="subdescription sabdescription-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    </div>
                   </div>
                   <div class="reasons-image">
                     <img class="reasons-item-image" src="images/reasons/sedona-city.jpg" width="800" height="385" alt="Уютный город Седона">
@@ -63,26 +67,34 @@
                 </li>
                 <li class="reasons-item reasons-item-square">
                   <div class="reasons-text">
-                    <h3 class="subtitle">Небольшая площадь</h3>
-                    <p class="subdescription ">Все достопримечательности находятся очень близко</p>
+                    <div class="reasons-text-conteiner">
+                      <h3 class="subtitle">Небольшая площадь</h3>
+                      <p class="subdescription ">Все достопримечательности находятся очень близко</p>
+                    </div>
                   </div>
                 </li>
                 <li class="reasons-item reasons-item-road">
                   <div class="reasons-text">
-                    <h3 class="subtitle">Красивая дорога</h3>
-                    <p class="subdescription ">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <div class="reasons-text-conteiner">
+                      <h3 class="subtitle">Красивая дорога</h3>
+                      <p class="subdescription ">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </div>
                   </div>
                 </li>
                 <li class="reasons-item reasons-item-tourist">
                   <div class="reasons-text">
-                    <h3 class="subtitle">Мало туристов</h3>
-                    <p class="subdescription">Большинство едет в Гранд Каньон и толпится там</p>
+                    <div class="reasons-text-conteiner">
+                      <h3 class="subtitle">Мало туристов</h3>
+                      <p class="subdescription">Большинство едет в Гранд Каньон и толпится там</p>
+                    </div>
                   </div>
                 </li>
                 <li class="reasons-item reasons-item-bridge">
                   <div class="reasons-text">
-                    <h3 class="subtitle subtitle-light">Там есть мост дьявола</h3>
-                    <p class="subdescription sabdescription-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                    <div class="reasons-text-conteiner">
+                      <h3 class="subtitle subtitle-light">Там есть мост дьявола</h3>
+                      <p class="subdescription sabdescription-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                    </div>
                   </div>
                   <div class="reasons-image">
                     <img class="reasons-item-image" src="images/reasons/canyon.jpg" width="800" height="385" alt="Мост Дьявола-горная арка">
@@ -92,34 +104,48 @@
             </div>
           </section>
           <section class="service">
-            <h2 class="title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-            <p class="description">Опытный персонал и качественное обслуживание!</p>
+            <div class="service-main-text">
+              <h2 class="title service-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</h2>
+              <p class="description service-description">Опытный персонал и качественное обслуживание!</p>
+            </div>
             <div class="container-service">
               <ul class="service-list">
                 <li class="service-item service-item-home">
-                  <h3 class="subtitle">Жильё</h3>
-                  <p class="subdescription service-subdescription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <div class="service-text">
+                    <div class="service-text-conteiner">
+                      <h3 class="subtitle subtitle-cervice">Жильё</h3>
+                      <p class="subdescription service-subdescription">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                    </div>
+                  </div>
                 </li>
                 <li class="service-item service-item-food">
-                  <h3 class="subtitle">Еда</h3>
-                  <p class="subdescription service-subdescription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                  <div class="service-text">
+                    <div class="service-text-conteiner">
+                      <h3 class="subtitle subtitle-cervice">Еда</h3>
+                      <p class="subdescription service-subdescription">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                    </div>
+                  </div>
                 </li>
                 <li class="service-item service-item-souvenir">
-                  <h3 class="subtitle">Сувениры</h3>
-                  <p class="subdescription service-subdescription">Не только китайского, но и настоящего местного производства!</p>
+                  <div class="service-text">
+                    <div class="service-text-conteiner">
+                      <h3 class="subtitle subtitle-cervice">Сувениры</h3>
+                      <p class="subdescription service-subdescription">Не только китайского, но и настоящего местного производства!</p>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
           </section>
         </section>
         <section class="search" data-test="search">
-          <h2 class="title">Заинтересовались?</h2>
-          <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <h2 class="title search-title">Заинтересовались?</h2>
+          <p class="description search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button button-modal button-search" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
         <section class="subscribe" data-test="subscribe">
-          <h2 class="title title-light">Подпишитесь на рассылку</h2>
-          <p class="description description-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <h2 class="title title-light subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="description description-light subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <input class="email-field" type="email" name="email" placeholder="Ваш e-mail">
             <button class="button button-link button-subscribe" type="submit">Подписаться</button>
@@ -130,17 +156,17 @@
         <div class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
-              <a class="vk-icon" href="https://vk.com/htmlacademy">
+              <a class="vk-icon icon" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
               </a>
             </li>
             <li class="contacts-item">
-              <a class="tg-icon" href="https://t.me/htmlacademy">
+              <a class="tg-icon icon" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="contacts-item">
-              <a class="yt-icon" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="yt-icon icon" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">YouTube</span>
               </a>
             </li>
@@ -149,7 +175,7 @@
         <div class="contacts-tel">
           <a class="contacts-tel-link" href="tel:78128121212">+7 (812) 812-12-12</a>
         </div>
-        <div class="contacts-logo"></div>
+        <div class="contacts-logo">
           <a href="https://htmlacademy.ru/">
             <img class="logo-academy" src="images/footer/logo-academy.svg" width="115" height="33" alt="Логотип Академии">
           </a>
