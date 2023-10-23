@@ -12,6 +12,9 @@
     font-weight: 700;
     font-display: swap;
 }
+
+/**основные**/
+
 html{
     height: 100%;
 }
@@ -39,7 +42,6 @@ body{
 }
 .main-conteiner, .page-main-catalog{
     flex-grow: 1;
-
 }
 .visually-hidden {
     position: absolute;
@@ -52,97 +54,6 @@ body{
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-.page-heder{
-   font-size: 20px;
-   font-weight: 700;
-   line-height: 24px;
-   color:#000000;
-   background-color:#FFFFFF;
-   display: flex;
-   box-sizing: border-box;
-   padding: 0 70px;
-   align-items: center;
-   width: 1200px;
-   margin: 0 auto;
-}
-.logo-sedona{
-    display: block;
-    position: relative;
-    width: 140px;
-    height: 64px;
-    margin-right: 28px;
-}
-.navigation-list{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-}
-.navigation-link{
-    text-decoration: none;
-    text-align: center;
-    color: #000000;
-    text-transform: capitalize;
-    padding: 20px 16px;
-    display: block;
-
-}
-.navigation{
-    display: flex;
-    margin-right: 20px;
-    width: 770px;
-
-}
-.navigation-image{
-    display: block;
-}
-.navigation-user{
-    margin-left: auto;
-}
-.navigation-user-link{
-    display: block;
-    padding: 22px 16px;
-}
-
-.link-favorites{
-    position: relative;
-}
-.favorites-check{
-    background-color:#7DB54F;
-    background-size: 20px 20px;
-    border:solid #7DB54F;
-    border-radius: 9999px ;
-    color:#FFFFFF;
-    font-size: 10px;
-    line-height: 10px;
-    text-align: center;
-    font-weight: 400;
-    min-width: 10px;
-    position: absolute;
-    top: 15px;
-    left: calc(100% - 25px);
-
-}
-
-
-
-
-.page-main-hero{
-    background-image: url("../images/bg-img/flag.png"), url("../images/bg-img/index-background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain, cover;
-    background-color: #615b5b;
-    background-position: center bottom, center;
-    text-align: center;
-    min-height: 485px;
-}
-.page-main-hero-image{
-    display: block;
-    width: 458px;
-    margin: 0 auto;
-    padding-top: 51px;
 }
 .title{
     font-size: 30px;
@@ -177,6 +88,113 @@ body{
 .subdescription{
     text-align: center;
 }
+.title-light,
+.description-light,
+.subtitle-light,
+.sabdescription-light{
+    color: #FFFFFF;
+}
+
+/**навигация**/
+
+.page-heder{
+   font-size: 20px;
+   font-weight: 700;
+   line-height: 24px;
+   color:#000000;
+   background-color:#FFFFFF;
+   display: flex;
+   box-sizing: border-box;
+   padding: 0 70px;
+   align-items: center;
+   width: 1200px;
+   margin: 0 auto;
+}
+.logo-sedona{
+    display: block;
+    position: relative;
+    width: 140px;
+    height: 64px;
+    margin-right: 28px;
+}
+.logo-sedona-header{
+    display: block;
+    position: absolute;
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.navigation-link{
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 20px 16px;
+    display: block;
+}
+.navigation{
+    display: flex;
+    margin-right: 20px;
+    width: 770px;
+}
+.navigation-image{
+    display: block;
+}
+.navigation-user{
+    margin-left: auto;
+}
+.navigation-user-link{
+    display: block;
+    padding: 22px 16px;
+}
+
+.link-favorites{
+    position: relative;
+}
+.navigation-favorites{
+    position: relative;
+}
+.favorites-check{
+    background-color:#7DB54F;
+    background-size: 20px 20px;
+    border:solid #7DB54F;
+    border-radius: 9999px ;
+    color:#FFFFFF;
+    font-size: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-weight: 400;
+    min-width: 10px;
+    position: absolute;
+    top: 15px;
+    left: calc(100% - 25px);
+}
+
+/**герой**/
+
+
+.page-main-hero{
+    background-image: url("../images/bg-img/flag.png"), url("../images/bg-img/index-background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-color: #615b5b;
+    background-position: center bottom, center;
+    text-align: center;
+    min-height: 485px;
+}
+.page-main-hero-image{
+    display: block;
+    width: 458px;
+    margin: 0 auto;
+    padding-top: 51px;
+}
+
+/**причины**/
+
 .title-resons{
    margin-bottom: 25px;
 }
@@ -187,17 +205,47 @@ body{
     margin: 0;
     padding: 0;
 }
-.reasons-item:first-child, .reasons-item:last-child{
+.reasons-item:first-child{
     display: flex;
     flex-wrap: wrap;
 }
-.reasons-text{
-    width: 400px;
-    height: 385px;
+.reasons-item:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
-.reasons-text-conteiner{
-    padding: 103px 85px;
+.reasons-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 75px 84px;
+    width: 400px;
+    min-height: 385px;
+}
+.reasons-subtitle{
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.reasons-subdescription{
     margin: 0;
+}
+.reasons-subdescription::before{
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #000000;
+    margin: 0 auto 30px;
+}
+.reasons-subdescription-light::before{
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0 auto 30px;
 }
 .reasons-item-image{
     display: block;
@@ -220,16 +268,11 @@ body{
 .hero-text{
     padding-top: 69px;
     padding-bottom: 69px;
+    margin-bottom: 21px;
 }
-.container-reasons{
-    margin-top: 21px;
-}
-.title-light,
-.description-light,
-.subtitle-light,
-.sabdescription-light{
-    color: #FFFFFF;
-}
+
+/**сервис**/
+
 .service-main-text{
     padding-top: 64px;
     padding-bottom: 64px;
@@ -246,31 +289,65 @@ body{
 }
 .subtitle-cervice{
     margin-bottom: 30px;
+    margin-top: 0;
+}
+.service-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 80px 85px;
+    width: 400px;
+    min-height: 385px;
+}
+.service-subdescription{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .service-text{
-    width: 400px;
-    height: 385px;
+    min-height: 225px;
 }
-.service-text-conteiner{
-    padding: 80px 85px;
-    margin: 0;
-}
-
-.service-item-home{
-    background-image: url("../images/service/service-home.svg");
+.service-item:nth-child(2n+1){
     background-color: #83B3D31F;
-    background-repeat: no-repeat;
-
 }
-.service-item-food{
+.service-home::before{
+    content: " ";
+    display: block;
+    background-image: url("../images/service/service-home.svg");
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.service-food::before{
+    content: " ";
+    display: block;
     background-image: url("../images/service/service-food.svg");
     background-repeat: no-repeat;
+    width: 75px;
+    height: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
 }
-.service-item-souvenir{
+.service-souvenir::before{
+    content: " ";
+    display: block;
     background-image: url("../images/service/service-souvenir.svg");
-    background-color: #83B3D31F;
     background-repeat: no-repeat;
+    width: 64px;
+    height: 76px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
+
+/**подписка**/
+
 .subscribe{
     background-image: url("../images/bg-img/subscribe-bg.jpg");
     background-repeat: no-repeat;
@@ -279,50 +356,15 @@ body{
     background-size: cover;
     text-align: center;
 }
-.email-field{
-    background-color: #F2F2F2;
-    font-size: 18px;
-    line-height: 24px;
-}
-.button {
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.button-link{
-    background-color: #82B3D3;
-}
- .button-modal{
-    background-color: #756157;
-}
-.button-subscribe{
-    font-size: 20px;
-    line-height: 36px;
-}
-.button-reset{
-    background-color: transparent;
-}
 .search{
     text-align: center;
     padding-top: 96px;
     padding-bottom: 96px;
 }
-.button-search{
-    font-size: 20px;
-    line-height: 36px;
-}
-.button-favorites{
-    background-color: #7DB54F;
-}
-.type-card-button{
-    background-color: #FFFFFF;
-    width: 48px;
-    height: 48px;
-    padding: 14px 12px
+.email-field{
+    background-color: #F2F2F2;
+    font-size: 18px;
+    line-height: 24px;
 }
 .search-title, .subscribe-title{
     margin-bottom: 20px;
@@ -334,6 +376,13 @@ body{
     padding-top: 96px;
     padding-bottom: 104px;
 }
+
+/**подвал**/
+
+
+
+
+
 .page-footer{
     display: flex;
     box-sizing: border-box;
@@ -347,8 +396,36 @@ body{
     width: 142px;
     height: 40px;
     align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
+}
+.contacts-item{
+    display: flex;
+    min-width: 47px;
+    align-items: center;
+    justify-content: center;
+}
+.vk-icon{
+    display: block;
+    width: 24px;
+    height: 14px;
+    background-image: url("../images/footer/vk.svg");
+    background-repeat: no-repeat;
+}
+.tg-icon{
+    display: block;
+    width: 18px;
+    height: 16px;
+    background-image: url("../images/footer/telegram.svg");
+    background-repeat: no-repeat;
+}
+.yt-icon{
+    display: block;
+    width: 22px;
+    height: 17px;
+    background-image: url("../images/footer/youtube.svg");
+    background-repeat: no-repeat;
 }
 .contacts-tel-link{
     font-size: 40px;
@@ -359,32 +436,10 @@ body{
     width: 720px;
     display: block;
     text-align: center;
+}
 
-}
-.vk-icon{
-    display: block;
-    width: 24px;
-    height: 14px;
-    background-image: url("../images/footer/vk.svg");
-    background-repeat: no-repeat;
-    padding: 10px;
-}
-.tg-icon{
-    display: block;
-    width: 18px;
-    height: 16px;
-    background-image: url("../images/footer/telegram.svg");
-    background-repeat: no-repeat;
-    padding: 10px;
-}
-.yt-icon{
-    display: block;
-    width: 22px;
-    height: 17px;
-    background-image: url("../images/footer/youtube.svg");
-    background-repeat: no-repeat;
-    padding: 10px;
-}
+/**каталог**/
+
 .catalog-hero{
     background-image: url("../images/bg-img/filter.jpg");
     background-repeat: no-repeat;
@@ -402,9 +457,13 @@ body{
     display: block;
     margin: 0 0 8px 0;
 }
+
+/**хлебные крошки**/
+
 .breadcrumb-list{
     list-style: none;
     display: flex;
+    align-items: center;
     padding: 0;
     margin: 0 0 40px 0;
 }
@@ -415,6 +474,17 @@ body{
     background-repeat: no-repeat;
     display: block;
 }
+.breadcrumb-item-home::after{
+    content: " ";
+    display: flex;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    width: 8px;
+    height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
 .breadcrumb-item{
     font-size: 16px;
     line-height: 21px;
@@ -423,6 +493,9 @@ body{
     align-items: center;
     align-self: center;
 }
+
+/**фильтры**/
+
 .filters{
     display: flex;
     flex-wrap: wrap;
@@ -475,8 +548,25 @@ body{
 .button-submit{
     margin-bottom: 32px;
 }
-.filter-sorting{
+.catalog{
+    margin: 0;
+    padding: 50px 70px 60px 70px;
+}
+.catalog-header-sorting{
     display: flex;
+    align-items: center;
+}
+.sorting{
+
+    margin-left: auto;
+}
+.select-sorting{
+    width: 292px;
+}
+.type-card-list{
+    display: flex;
+    margin-left: 70px;
+    padding: 0;
 }
 
 
@@ -506,6 +596,42 @@ body{
     text-align: left;
     color: #333333;
 }
+.catalog-hotels{
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+.subtitle-card, .sabdescription-catalog{
+    margin: 0;
+}
+.catalog-list{
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    gap: 20px;
+    grid-auto-flow: dense;
+    margin: 0;
+    padding: 0;
+
+}
+.catalog-card{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #E6E6E6;
+    padding: 20px;
+}
+.text-prise-card{
+    display: flex;
+    justify-content: space-between;
+}
+.conteiner-card-buttons{
+    display: grid;
+    grid-template-columns: 140px 140px;
+    gap: 20px;
+}
+
 .stars-4{
     background-image: url("../images/hotels/stars-4.png");
     background-repeat: no-repeat;
@@ -538,10 +664,25 @@ body{
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
+    margin: 0;
 }
+
+/**пагинация**/
+
 .pagination-list{
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 8px;
+
 }
+/**
+.pagination-list::before{
+    content: " ";
+
+}**/
 .pagination-link{
     font-size: 20px;
     font-weight: 700;
@@ -551,7 +692,18 @@ body{
     color: #FFFFFF;
     background-color: #82B3D3;
     text-decoration: none;
+    display: flex;
+    height: 60px;
+    min-width: 60px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
 }
+
+
 .pagination-active{
     color: #000000;
     background-color: #F2F2F2;
@@ -570,4 +722,42 @@ body{
 }
 .subscribe-catalog .description{
     color: #333333;
+}
+/**кнопки/ссылки**/
+
+.button {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.button-link{
+    background-color: #82B3D3;
+}
+ .button-modal{
+    background-color: #756157;
+}
+.button-subscribe{
+    font-size: 20px;
+    line-height: 36px;
+}
+.button-reset{
+    background-color: transparent;
+}
+
+.button-search{
+    font-size: 20px;
+    line-height: 36px;
+}
+.button-favorites{
+    background-color: #7DB54F;
+}
+.type-card-button{
+    background-color: #FFFFFF;
+    width: 48px;
+    height: 48px;
+    padding: 14px 12px
 }
