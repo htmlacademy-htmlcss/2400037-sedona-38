@@ -116,6 +116,7 @@ body{
     width: 140px;
     height: 64px;
     margin-right: 28px;
+    align-self: flex-start;
 }
 .logo-sedona-header{
     display: block;
@@ -146,6 +147,8 @@ body{
 }
 .navigation-user{
     margin-left: auto;
+    flex-wrap: nowrap;
+    align-self: flex-start;
 }
 .navigation-user-link{
     display: block;
@@ -205,11 +208,11 @@ body{
     margin: 0;
     padding: 0;
 }
-.reasons-item:first-child{
+.reasons-item-noreverse{
     display: flex;
     flex-wrap: wrap;
 }
-.reasons-item:last-child{
+.reasons-item-reverse{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -287,7 +290,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.subtitle-cervice{
+.subtitle-service{
     margin-bottom: 30px;
     margin-top: 0;
 }
@@ -384,15 +387,18 @@ body{
 
 
 .page-footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 720px 1fr;
     box-sizing: border-box;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
     padding: 40px 70px 30px;
 }
 .contacts-list{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
     width: 142px;
     height: 40px;
     align-items: center;
@@ -405,6 +411,11 @@ body{
     min-width: 47px;
     align-items: center;
     justify-content: center;
+}
+.contacts-logo{
+    display: flex;
+    justify-content: flex-end;
+
 }
 .vk-icon{
     display: block;
@@ -433,10 +444,12 @@ body{
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-    width: 720px;
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /**каталог**/
 
@@ -729,6 +742,10 @@ body{
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+}
+.button-header{
+    align-self: flex-start;
+    margin-top: 24px;
 }
 .button-link{
     background-color: #82B3D3;
