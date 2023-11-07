@@ -1081,7 +1081,7 @@ body{
 }
 /**кнопки/ссылки**/
 .button-header:hover,
-.button-header:focus-visible
+.button-header:focus-visible,
 .button-search:hover,
 .button-search:focus-visible,
 .button-card-link:hover,
