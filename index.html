@@ -44,13 +44,13 @@
           </ul>
         </nav>
         <div class="button-conteiner">
-          <a href="catalog.html" class="button button-modal button-header">Хочу сюда!</a>
+          <a href="catalog.html" class="button button-dark button-header">Хочу сюда!</a>
         </div>
       </header>
       <main class="page-main main-conteiner" data-test="main">
         <section class="page-main-hero" data-test="hero">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-          <img class="page-main-hero-image" src="images/welcome.svg" width="458" height="352" class="welcome-hero" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+          <img class="page-main-hero-image welcome-hero" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </section>
         <section class="reasons" data-test="advantages">
           <div class="hero-text">
@@ -129,14 +129,14 @@
         <section class="search" data-test="search">
           <h2 class="title search-title">Заинтересовались?</h2>
           <p class="description search-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button button-modal button-search" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+          <a class="button button-dark button-search" href="catalog.html">Поиск гостиницы в седоне</a>
         </section>
         <section class="subscribe" data-test="subscribe">
           <h2 class="title title-light subscribe-title">Подпишитесь на рассылку</h2>
           <p class="description description-light subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="email-field" type="email" name="email" placeholder="Ваш e-mail" required>
-            <button class="button button-link button-subscribe" type="submit">Подписаться</button>
+            <button class="button button-light button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -159,7 +159,7 @@
                 <svg aria-hidden="true" focusable="false" width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M17.2853 0.0992597L1.34073 6.24776C0.252584 6.68481 0.258879 7.29184 1.14109 7.56253L5.23469 8.83953L14.7061 2.8637C15.1539 2.59121
                   15.5631 2.7378 15.2268 3.03636L7.55308 9.96185H7.55128L7.55308 9.96275L7.2707 14.1823C7.68438 14.1823 7.86693 13.9925 8.09895 13.7686L10.0873
-                  11.8351L14.2232 14.89C14.9858 15.31 15.5334 15.0941 15.7232 14.1841L18.4382 1.38885C18.7161 0.274623 18.0128 -0.229883 17.2853 0.0992597Z" >
+                  11.8351L14.2232 14.89C14.9858 15.31 15.5334 15.0941 15.7232 14.1841L18.4382 1.38885C18.7161 0.274623 18.0128 -0.229883 17.2853 0.0992597Z"/>
                 </svg>
                 <span class="visually-hidden">Телеграм</span>
               </a>
@@ -186,6 +186,92 @@
           </a>
         </div>
       </footer>
+      <!--modal-container-open показывает модальное окно-->
+      <div class="modal-container">
+        <div class="modal modal-search" data-test="modal">
+          <button type="button" class="modal-close button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path fill="#000" d="M17.71 4.783 16.418 3.49 10.71 9.198 5.002 3.491 3.71 4.783l5.708 5.708-5.708 5.707 1.292 1.293 5.708-5.708 5.708 5.708 1.292-1.293-5.708-5.707 5.708-5.708Z"/>
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-content-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-content-field modal-content-field-date field-group">
+                <label class="field-group-label" for="date-start">
+                  <span class="field-group-text">Дата Заезда:</span>
+                </label>
+                <div class="field-group-input">
+                  <input id="date-start" class="input input-date" type="text" name="date-start" placeholder="Укажите дату" value="27 апреля 2020">
+                  <span class="alert alert-error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+              <div class="modal-content-field modal-content-field-date field-group">
+                <label class="field-group-label" for="date-end">
+                  <span class="field-group-text">Дата Выезда:</span>
+                </label>
+                <div class="field-group-input">
+                  <input id="date-end" class="input input-date" type="text" name="date-end" placeholder="Укажите дату" value="1 сентября 2023">
+                  <span class="alert">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="modal-content-field field-group">
+                <label class="field-group-label" for="older">
+                  <span class="field-group-text">Взрослые:</span>
+                </label>
+                <div class="field-group-input field-group-input-number">
+                  <button class="number-button button number-button-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M3 9v2h14V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input id="older" class="modal-content-input input input-number" type="number" name="older" value="2" max="99">
+                  <button class="number-button button number-button-more" type="button">
+                    <span class="visually-hidden">Добавить взрослого</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-content-field field-group">
+                <div class="field-group-wrapper field-group-wrapper-children">
+                  <label class="field-group-label" for="children">
+                    <span class="field-group-text">Дети:</span>
+                  </label>
+                  <span class="field-group-tooltip tooltip">
+                    <button class="tooltip-button button" type="button" aria-labelledby="tooltip-label-date">
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                        <circle cx="13.22" cy="13" r="13" fill="#83B3D3"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M12.22 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/>
+                    </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </div>
+                <div class="field-group-input field-group-input-number">
+                  <button class="number-button button number-button-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M3 9v2h14V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input id="children" class="modal-content-input input input-number" type="number" name="children" value="2" max="99">
+                  <button class="number-button button number-button-more" type="button">
+                    <span class="visually-hidden">Добавить ребёнка</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" class="modal-content-button button button-light">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
     </div>
   </body>
 </html>
