@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/2400037-sedona-38/8/">
+</head>
+  <body>
+    <div class="modal-container">
+        <div class="modal modal-search" data-test="modal">
+          <button type="button" class="modal-close button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path fill="#000" d="M17.71 4.783 16.418 3.49 10.71 9.198 5.002 3.491 3.71 4.783l5.708 5.708-5.708 5.707 1.292 1.293 5.708-5.708 5.708 5.708 1.292-1.293-5.708-5.707 5.708-5.708Z"/>
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title section-title">Поиск гостиницы в Седоне</h2>
+            <form class="modal-content-form" action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-content-field modal-content-field-date field-group">
+                <label class="field-group-label" for="date-start">
+                  <span class="field-group-text">Дата Заезда:</span>
+                </label>
+                <div class="field-group-input">
+                  <input id="date-start" class="input input-date" type="text" name="date-start" placeholder="Укажите дату" value="27 апреля 2020">
+                  <span class="alert alert-error">Мы не можем отправить вас в прошлое.</span>
+                </div>
+              </div>
+              <div class="modal-content-field modal-content-field-date field-group">
+                <label class="field-group-label" for="date-end">
+                  <span class="field-group-text">Дата Выезда:</span>
+                </label>
+                <div class="field-group-input">
+                  <input id="date-end" class="input input-date" type="text" name="date-end" placeholder="Укажите дату" value="1 сентября 2023">
+                  <span class="alert">На эти даты есть свободные номера. Пока есть.</span>
+                </div>
+              </div>
+              <div class="modal-content-field field-group">
+                <label class="field-group-label" for="older">
+                  <span class="field-group-text">Взрослые:</span>
+                </label>
+                <div class="field-group-input field-group-input-number">
+                  <button class="number-button button number-button-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M3 9v2h14V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input id="older" class="modal-content-input input input-number" type="number" name="older" value="2" max="99">
+                  <button class="number-button button number-button-more" type="button">
+                    <span class="visually-hidden">Добавить взрослого</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="modal-content-field field-group">
+                <div class="field-group-wrapper field-group-wrapper-children">
+                  <label class="field-group-label" for="children">
+                    <span class="field-group-text">Дети:</span>
+                  </label>
+                  <span class="field-group-tooltip tooltip">
+                    <button class="tooltip-button button" type="button" aria-labelledby="tooltip-label-date">
+                      <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                        <circle cx="13.22" cy="13" r="13" fill="#83B3D3"/>
+                        <path fill="#fff" fill-rule="evenodd" d="M12.22 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/>
+                    </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </div>
+                <div class="field-group-input field-group-input-number">
+                  <button class="number-button button number-button-less" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M3 9v2h14V9H3Z"/>
+                    </svg>
+                  </button>
+                  <input id="children" class="modal-content-input input input-number" type="number" name="children" value="2" max="99">
+                  <button class="number-button button number-button-more" type="button">
+                    <span class="visually-hidden">Добавить ребёнка</span>
+                    <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" class="modal-content-button button button-light">Найти</button>
+            </form>
+          </section>
+        </div>
+      </div>
+  </body>
+</html>
