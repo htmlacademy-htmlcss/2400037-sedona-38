@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
       <header class="page-heder" data-test="header">
         <a aria-label="Логотип сайта Седона" class="logo-sedona">
-          <img src="images/header/logo-sedona.svg" class="logo-sedona-header" width="140" height="70" alt="Логотип Седона">
+          <img src="images/header/logo-sedona.svg" class="logo-sedona-header" width="140" height="70" alt="Логотип Седона.">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -65,7 +67,7 @@
                   <p class="subdescription sabdescription-light reasons-subdescription reasons-subdescription-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <div>
-                  <img class="reasons-image" src="images/reasons/sedona-city.jpg" width="800" height="385" alt="Уютный город Седона">
+                  <img class="reasons-image" src="images/reasons/sedona-city.jpg" width="800" height="385" alt="Уютный город Седона.">
                 </div>
               </li>
               <li class="reasons-item-text">
@@ -92,7 +94,7 @@
                   <p class="subdescription sabdescription-light reasons-subdescription reasons-subdescription-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
                 <div>
-                  <img class="reasons-image" src="images/reasons/canyon.jpg" width="800" height="385" alt="Мост Дьявола-горная арка">
+                  <img class="reasons-image" src="images/reasons/canyon.jpg" width="800" height="385" alt="Мост Дьявола-горная арка.">
                 </div>
               </li>
             </ul>
@@ -135,7 +137,8 @@
           <h2 class="title title-light subscribe-title">Подпишитесь на рассылку</h2>
           <p class="description description-light subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="email-field" type="email" name="email" placeholder="Ваш e-mail" required>
+            <input class="email-field" id="email" type="email" name="email" placeholder="Ваш e-mail" required>
+            <label aria-hidden="true" class="visually-hidden" for="email">Введите email</label>
             <button class="button button-light button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
