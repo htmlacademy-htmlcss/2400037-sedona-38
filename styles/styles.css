@@ -713,7 +713,6 @@ body {
 .control-label {
   font-size: 18px;
   line-height: 23px;
-  margin-left: 16px;
   flex-shrink: 10;
 }
 
@@ -799,16 +798,12 @@ body {
   outline: 3px solid #82B3D3;
 }
 
-.control-input:disabled + .control-mark,
-.control-input:disabled + .control-mark-checkbox,
-.control-input:disabled + .control-label {
-  color: #000000;
+.control-input:disabled ~ .control-mark,
+.control-input:disabled ~ .control-mark-checkbox,
+.control-input:disabled ~ .control-label {
   opacity: 0.3;
-  pointer-events: none;
+  cursor: default;
 }
-
-
-
 
 /** фильтр цены**/
 
