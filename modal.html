@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header class="page-heder" data-test="header">
-        <a aria-label="Логотип сайта Седона" class="logo-sedona">
+        <a class="logo-sedona">
           <img src="images/header/logo-sedona.svg" class="logo-sedona-header" width="140" height="70" alt="Логотип Седона.">
         </a>
         <nav class="navigation">
@@ -27,7 +27,7 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-user-item">
-              <a aria-label="Поиск" class="navigation-user-link" href="catalog.html">
+              <a class="navigation-user-link" href="catalog.html">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 18 18">
                   <path fill="currentColor" d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
                 </svg>
@@ -35,7 +35,7 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a aria-label="Избранное" class="navigation-user-link link-favorites" href="#">
+              <a class="navigation-user-link link-favorites" href="#">
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none" viewBox="0 0 21 20">
                   <path fill="currentColor" d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
                 </svg>
@@ -57,74 +57,70 @@
             <h2 class="title title-resons">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
             <p class="description description-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
-          <div class="container-reasons">
-            <ul class="reasons-list">
-              <li class="reasons-item-image">
-                <div class="reasons-text">
-                  <h3 class="subtitle subtitle-light reasons-subtitle">Настоящий городок</h3>
-                  <p class="subdescription sabdescription-light reasons-subdescription reasons-subdescription-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-                <div>
-                  <img class="reasons-image" src="images/reasons/sedona-city.jpg" width="800" height="385" alt="Уютный город Седона.">
-                </div>
-              </li>
-              <li class="reasons-item-text">
-                <div class="reasons-text">
-                  <h3 class="subtitle reasons-subtitle">Небольшая площадь</h3>
-                  <p class="subdescription reasons-subdescription">Все достопримечательности находятся очень близко</p>
-                </div>
-              </li>
-              <li class="reasons-item-text">
-                <div class="reasons-text">
-                  <h3 class="subtitle reasons-subtitle">Красивая<br>дорога</h3>
-                  <p class="subdescription reasons-subdescription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-              </li>
-              <li class="reasons-item-text">
-                <div class="reasons-text">
-                  <h3 class="subtitle reasons-subtitle">Мало<br>туристов</h3>
-                  <p class="subdescription reasons-subdescription">Большинство едет в Гранд Каньон и толпится там</p>
-                </div>
-              </li>
-              <li class="reasons-item-image reasons-item-reverse">
-                <div class="reasons-text">
-                  <h3 class="subtitle subtitle-light reasons-subtitle">Там есть<br>мост дьявола</h3>
-                  <p class="subdescription sabdescription-light reasons-subdescription reasons-subdescription-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                </div>
-                <div>
-                  <img class="reasons-image" src="images/reasons/canyon.jpg" width="800" height="385" alt="Мост Дьявола-горная арка.">
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="reasons-list">
+            <li class="reasons-item-image">
+              <div class="reasons-text">
+                <h3 class="subtitle subtitle-light reasons-subtitle">Настоящий городок</h3>
+                <p class="subdescription sabdescription-light reasons-subdescription reasons-subdescription-light">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+              <div class="reasons-item-images">
+                <img class="reasons-image" src="images/reasons/sedona-city.jpg" width="800" height="385" alt="Уютный город Седона.">
+              </div>
+            </li>
+            <li class="reasons-item-text">
+              <div class="reasons-text">
+                <h3 class="subtitle reasons-subtitle">Небольшая площадь</h3>
+                <p class="subdescription reasons-subdescription">Все достопримечательности находятся очень близко</p>
+              </div>
+            </li>
+            <li class="reasons-item-text">
+              <div class="reasons-text">
+                <h3 class="subtitle reasons-subtitle">Красивая<br>дорога</h3>
+                <p class="subdescription reasons-subdescription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="reasons-item-text">
+              <div class="reasons-text">
+                <h3 class="subtitle reasons-subtitle">Мало<br>туристов</h3>
+                <p class="subdescription reasons-subdescription">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
+            <li class="reasons-item-image reasons-item-reverse">
+              <div class="reasons-text">
+                <h3 class="subtitle subtitle-light reasons-subtitle">Там есть<br>мост дьявола</h3>
+                <p class="subdescription sabdescription-light reasons-subdescription reasons-subdescription-light">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
+              <div class="reasons-item-images">
+                <img class="reasons-image" src="images/reasons/canyon.jpg" width="800" height="385" alt="Мост Дьявола-горная арка.">
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="service" data-test="service">
           <div class="service-main-text">
             <h2 class="title service-title">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</h2>
             <p class="description service-description">Опытный персонал и качественное обслуживание!</p>
           </div>
-          <div class="container-service">
-            <ul class="service-list">
-              <li class="service-item service-item-home">
-                <div class="service-text service-home">
-                  <h3 class="subtitle subtitle-service">Жильё</h3>
-                  <p class="subdescription service-subdescription">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-                </div>
-              </li>
-              <li class="service-item service-item-food">
-                <div class="service-text service-food">
-                  <h3 class="subtitle subtitle-service">Еда</h3>
-                  <p class="subdescription service-subdescription">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
-                </div>
-              </li>
-              <li class="service-item service-item-souvenir">
-                <div class="service-text service-souvenir">
-                  <h3 class="subtitle subtitle-service">Сувениры</h3>
-                  <p class="subdescription service-subdescription">Не только китайского,<br>но и настоящего местного<br>производства!</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="service-list">
+            <li class="service-item service-item-home">
+              <div class="service-text service-home">
+                <h3 class="subtitle subtitle-service">Жильё</h3>
+                <p class="subdescription service-subdescription">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+              </div>
+            </li>
+            <li class="service-item service-item-food">
+              <div class="service-text service-food">
+                <h3 class="subtitle subtitle-service">Еда</h3>
+                <p class="subdescription service-subdescription">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="service-item service-item-souvenir">
+              <div class="service-text service-souvenir">
+                <h3 class="subtitle subtitle-service">Сувениры</h3>
+                <p class="subdescription service-subdescription">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="search" data-test="search">
           <h2 class="title search-title">Заинтересовались?</h2>
@@ -145,7 +141,7 @@
         <div class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
-              <a aria-label="Вконтакте" class="vk-icon icon" href="https://vk.com/htmlacademy">
+              <a class="vk-icon icon" href="https://vk.com/htmlacademy">
                 <svg aria-hidden="true" focusable="false" width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17
                   0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15
@@ -156,7 +152,7 @@
               </a>
             </li>
             <li class="contacts-item">
-              <a aria-label="Телеграм" class="tg-icon icon" href="https://t.me/htmlacademy">
+              <a class="tg-icon icon" href="https://t.me/htmlacademy">
                 <svg aria-hidden="true" focusable="false" width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M17.2853 0.0992597L1.34073 6.24776C0.252584 6.68481 0.258879 7.29184 1.14109 7.56253L5.23469 8.83953L14.7061 2.8637C15.1539 2.59121
                   15.5631 2.7378 15.2268 3.03636L7.55308 9.96185H7.55128L7.55308 9.96275L7.2707 14.1823C7.68438 14.1823 7.86693 13.9925 8.09895 13.7686L10.0873
@@ -166,7 +162,7 @@
               </a>
             </li>
             <li class="contacts-item">
-              <a aria-label="Ютуб" class="yt-icon icon" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="yt-icon icon" href="https://www.youtube.com/user/htmlacademyru">
                 <svg aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="currentColor" d="M19.1072 0.5H3.67437C1.81368 0.5 0.500244 2.09375 0.500244 3.9V13.9937C0.500244 15.9062 1.81368 17.5 3.67437 17.5H19.3261C20.9679 17.5
                   22.5002 15.9062 22.5002 14.1V3.9C22.2813 2.09375 20.9679 0.5 19.1072 0.5ZM8.16194 13.0375V4.9625L15.4953 9L8.16194 13.0375Z" />
