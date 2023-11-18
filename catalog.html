@@ -147,7 +147,7 @@
           <section class="catalog" data-test="catalog">
             <div class="catalog-header-sorting">
               <h2 class="title title-catalog">Найдено гостиниц: 38</h2>
-              <label aria-hidden="true" class="visually-hidden" for="sorting">Сортировать по цене</label>
+              <label class="visually-hidden" for="sorting">Сортировать по цене</label>
               <select class="select-sorting" name="sorting" id="sorting">
                 <option class="sorting-description" value="Сначала дешевые">Сначала дешевые</option>
               </select>
@@ -279,7 +279,9 @@
                   <a class="pagination-link" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link ellipsis" href="#">...</a>
+                  <a class="pagination-link ellipsis" href="#">...
+                    <span class="visually-hidden">Список страниц</span>
+                  </a>
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-link" href="#">10</a>

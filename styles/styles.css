@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family:  "PT Sans";
+  font-family: "PT Sans";
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
@@ -26,7 +26,7 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-style: normal;
   padding: 0 40px 0 40px;
   margin: 0;
@@ -37,7 +37,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: 1200px;
@@ -103,7 +103,7 @@ body {
 .description-light,
 .subtitle-light,
 .sabdescription-light {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /**навигация**/
@@ -113,7 +113,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   box-sizing: border-box;
   padding: 0 70px;
@@ -220,11 +220,11 @@ body {
 }
 
 .favorites-check {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   background-size: 20px 20px;
-  border: 3px solid #7DB54F;
+  border: 3px solid #7db54f;
   border-radius: 9999px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 10px;
   line-height: 10px;
   text-align: center;
@@ -237,7 +237,7 @@ body {
 }
 
 *:focus-visible {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
 }
 
 /**герой**/
@@ -246,7 +246,7 @@ body {
   background-image: url("../images/bg-img/flag.svg"), url("../images/bg-img/index-background.jpg");
   background-repeat: no-repeat;
   background-size: contain, cover;
-  background-color: #615B5B;
+  background-color: #615b5b;
   background-position: center bottom, center;
   text-align: center;
   min-height: 485px;
@@ -274,17 +274,17 @@ body {
 }
 
 .reasons-item-text:nth-child(even) {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
 .reasons-item-text:nth-child(odd) {
-  background-color: #83B3D333;
+  background-color: #83b3d333;
 }
 
 .reasons-item-image {
   display: flex;
   flex-wrap: wrap;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .reasons-item-reverse {
@@ -338,10 +338,12 @@ body {
   height: 100%;
   width: 100%;
 }
+
 .reasons-item-images {
   height: 385px;
   width: 800px;
 }
+
 .hero-text {
   padding-top: 69px;
   padding-bottom: 69px;
@@ -392,7 +394,7 @@ body {
 }
 
 .service-item:nth-child(2n+1) {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
 }
 
 .service-home::before {
@@ -436,7 +438,7 @@ body {
 .subscribe {
   background-image: url("../images/bg-img/subscribe-bg.jpg");
   background-repeat: no-repeat;
-  background-color: #615B5B;
+  background-color: #615b5b;
   background-position: center bottom;
   background-size: cover;
   text-align: center;
@@ -451,7 +453,7 @@ body {
 }
 
 .email-field {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -466,17 +468,17 @@ body {
 
 .email-field:hover,
 .email-field:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #83B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .button-subscribe:hover,
 .button-subscribe:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-subscribe:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -543,7 +545,7 @@ body {
 
 .icon {
   display: flex;
-  color: #83B3D3;
+  color: #83b3d3;
   text-decoration: none;
   align-items: center;
   justify-content: center;
@@ -552,7 +554,7 @@ body {
 
 .icon:hover,
 .icon:focus-visible {
-  color: #68A2CA;
+  color: #68a2ca;
   outline: none;
 }
 
@@ -590,7 +592,7 @@ body {
   background-color: #615b5b;
   background-size: cover;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 35px 70px 66px 70px;
   margin: 0;
 }
@@ -615,17 +617,17 @@ body {
 }
 
 .breadcrumb-link-home {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumb-link-home:hover,
 .breadcrumb-link-home:focus-visible {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
 }
 
 .breadcrumb-link-home:active {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.5;
 }
 
@@ -682,16 +684,12 @@ body {
   width: 191px;
 }
 
-.button-submit {
-  margin-bottom: 30px;
-}
-
 .form-legend {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0;
   margin-bottom: 32px;
 }
@@ -717,7 +715,7 @@ body {
 }
 
 .control-input[type="checkbox"] + .control-mark-checkbox {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 4px;
   appearance: none;
   width: 20px;
@@ -737,18 +735,19 @@ body {
   top: 2px;
   height: 20px;
   width: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
+
 .control-input[type="checkbox"]:checked + .control-mark-checkbox::before {
-	content: " ";
-	background-image: url("../images/checked.svg");
-	display: block;
-	background-repeat: no-repeat;
-	width: 20px;
-	height: 20px;
-	margin-left: auto;
-	margin-right: auto;
-  }
+  content: " ";
+  background-image: url("../images/checked.svg");
+  display: block;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
@@ -765,7 +764,7 @@ body {
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color: #3F5E72;
+  background-color: #3f5e72;
   border-radius: 50%;
   content: "";
 }
@@ -783,7 +782,6 @@ body {
 }
 
 .control-input:active,
-.control-label:active,
 .control-label:active {
   opacity: 0.3;
   cursor: pointer;
@@ -795,7 +793,7 @@ body {
 
 .control-input:focus-visible + .control-mark,
 .control-input:focus-visible + .control-mark-checkbox {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
 }
 
 .control-input:disabled ~ .control-mark,
@@ -820,7 +818,7 @@ body {
   display: inline-flex;
   width: 143px;
   height: 48px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   align-items: center;
   padding: 12px 20px;
   padding-right: 40px;
@@ -834,7 +832,7 @@ body {
 .control-price input:hover,
 .control-price input:active,
 .control-price input:focus-visible {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .form-price-min {
@@ -863,7 +861,7 @@ body {
 
 .segment-price {
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
   width: 226px;
   left: 0;
@@ -875,14 +873,14 @@ body {
   transform: translateY(-50%);
   width: 20px;
   height: 20px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 5px;
   border: none;
   cursor: pointer;
 }
 
 .range-toggle:active {
-  border: 2px solid #82B3D3;
+  border: 2px solid #82b3d3;
   outline: none;
 }
 
@@ -920,12 +918,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-right: 65px;
   margin-left: auto;
   height: 49px;
   width: 292px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   box-sizing: border-box;
   padding-left: 19px;
@@ -939,7 +937,7 @@ body {
 
 .select-sorting:hover,
 .select-sorting:focus-visible {
-  border: 2px solid #82B3D3;
+  border: 2px solid #82b3d3;
 }
 
 .select-sorting:focus-visible {
@@ -966,8 +964,8 @@ body {
 }
 
 .type-card-button {
-  border: 2px solid #E5E5E5;
-  background-color: #FFFFFF;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
   border-radius: 4px;
   width: 48px;
   height: 48px;
@@ -988,7 +986,7 @@ body {
 }
 
 .type-card-button:focus-visible {
-  border: 2px solid #82B3D3;
+  border: 2px solid #82b3d3;
   outline: none;
 }
 
@@ -1048,7 +1046,7 @@ body {
   grid-template-rows: 212px 1fr;
   gap: 16px 20px;
   border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   padding: 19px;
   width: 340px;
   box-sizing: border-box;
@@ -1061,10 +1059,11 @@ body {
 
 .catalog-image {
   display: block;
-  background-color: #615B5B;
+  background-color: #615b5b;
   height: 100%;
   width: 100%;
 }
+
 .catalog-image:hover,
 .catalog-image:focus-visible,
 .subtitle-card:hover,
@@ -1118,7 +1117,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 140px;
   min-height: 37px;
   font-size: 16px;
@@ -1134,7 +1133,7 @@ body {
 
 .pagination {
   padding-top: 39px;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 }
 
 .pagination-list {
@@ -1152,8 +1151,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   text-decoration: none;
   display: flex;
   height: 60px;
@@ -1168,7 +1167,7 @@ body {
 
 .pagination-link:not(.pagination-link-current, .ellipsis):hover,
 .pagination-link:not(.pagination-link-current, .ellipsis):focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:not(.pagination-link-current, .ellipsis):active {
@@ -1177,7 +1176,7 @@ body {
 
 .pagination-link-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .ellipsis {
@@ -1185,6 +1184,7 @@ body {
   color: #000000;
   border: none;
 }
+
 .ellipsis:hover,
 .ellipsis:focus-visible {
   color: rgba(0, 0, 0, 0.3);
@@ -1192,7 +1192,7 @@ body {
 
 .subscribe-catalog {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: none;
 }
 
@@ -1228,7 +1228,7 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -1246,8 +1246,8 @@ body {
 .button.is-disabled,
 .button:disabled,
 .range-toggle:disabled {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
+  background-color: #e5e5e5;
+  color: #ffffff;
   pointer-events: none;
 }
 
@@ -1260,7 +1260,7 @@ body {
 .form-price:disabled {
   color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .email-field::placeholder {
@@ -1272,7 +1272,7 @@ body {
 }
 
 .button-reset:disabled {
-  color: rgba(255,255,255, 0.1);
+  color: rgba(255, 255, 255, 0.1);
   background-color: transparent;
 }
 
@@ -1303,7 +1303,7 @@ body {
 }
 
 .button-light {
-  background-color: #83B3D3;
+  background-color: #83b3d3;
 }
 
 .button-dark {
@@ -1313,7 +1313,7 @@ body {
 .button-subscribe {
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   width: 232px;
@@ -1323,6 +1323,7 @@ body {
   width: 191px;
   padding: 8px 50px;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .button-submit:hover,
@@ -1331,13 +1332,13 @@ body {
 .button-card-favorites:focus-visible,
 .modal-content-button:hover,
 .modal-content-button:focus-visible {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-submit:active,
 .button-card-favorites:active,
 .modal-content-button:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1347,16 +1348,16 @@ body {
 }
 
 .button-card-favorites-current {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .button-card-favorites-current:hover,
 .button-card-favorites-current:focus-visible {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-card-favorites-current:active {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1373,7 +1374,7 @@ body {
 }
 
 .button-reset:focus-visible {
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   outline: none;
 }
 
@@ -1386,7 +1387,7 @@ body {
 }
 
 .button-favorites {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 /** модальное окно**/
@@ -1422,7 +1423,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   border-radius: 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
 }
@@ -1433,17 +1434,17 @@ body {
   right: 52px;
   padding: 16px;
   border-radius: 50%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   box-sizing: border-box;
 }
 
 .modal-close:hover {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .modal-close:focus-visible {
-  background-color: #E6E6E6;
-  outline: 3px solid #82B3D3;
+  background-color: #e6e6e6;
+  outline: 3px solid #82b3d3;
 }
 
 .section-title {
@@ -1532,13 +1533,13 @@ body {
 
 .input-date:hover,
 .input-date:focus-visible {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 .input {
   border: 0;
   border-radius: 4px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 
@@ -1551,7 +1552,7 @@ body {
 }
 
 .alert-error {
-  color: #FF5757;
+  color: #ff5757;
 }
 
 .alert {
@@ -1568,8 +1569,8 @@ body {
   width: 40px;
   height: 48px;
   border-radius: 0;
-  background-color: #F2F2F2;
-  color: rgba(117,97,87, 0.3);
+  background-color: #f2f2f2;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .number-button:hover {
@@ -1577,7 +1578,7 @@ body {
 }
 
 .number-button:focus-visible svg {
-  border: 3px solid #82B3D3;
+  border: 3px solid #82b3d3;
   border-radius: 6px;
   color: #000000;
 }
@@ -1605,13 +1606,13 @@ body {
   line-height: 20px;
   border-radius: 10px;
   background-color: #333333;
-  color: #FFFFFF;
+  color: #ffffff;
   display: none;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .tooltip-text::before {
-  content: '';
+  content: "";
   display: block;
   width: 19px;
   height: 9px;
@@ -1655,16 +1656,16 @@ body {
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type="number"],
 input[type="number"]:hover,
 input[type="number"]:focus {
-  appearance: none;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
+
 input[type="number"]:hover,
 input[type="number"]:focus {
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
